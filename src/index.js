@@ -108,7 +108,15 @@ function App() {
       <Header />
       <Menu />
 
-      {isOpen && <Order />}
+      {isOpen ? (
+        <Order />
+      ) : (
+        <div className="order">
+          <p>
+            We're closed. Come back between {openHour}:00 and {closeHour}:00.
+          </p>
+        </div>
+      )}
     </div>
   );
 }
