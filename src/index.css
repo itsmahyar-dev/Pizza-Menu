@@ -23,8 +23,7 @@ body {
   color: #252525;
 
   background:
-    radial-gradient(circle at top left, #fff8df 0, transparent 35%),
-    #f7f2e9;
+    radial-gradient(circle at top left, #fff8df 0, transparent 35%), #f7f2e9;
 
   border-bottom: 1.6rem solid #edc84b;
 }
@@ -272,6 +271,7 @@ button {
 .pizza.sold-out:hover {
   transform: none;
   box-shadow: 0 1rem 3rem rgba(37, 37, 37, 0.06);
+  border-color: rgba(37, 37, 37, 0.06);
 }
 
 .pizza.sold-out img {
