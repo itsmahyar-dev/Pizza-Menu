@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css"
+import "./index.css";
 
 const pizzaData = [
   {
@@ -59,10 +59,12 @@ function Menu() {
   return (
     <main className="menu">
       <h2>Our menu</h2>
+
       <p>
         Authentic Italian cuisine. 6 creative dishes to choose from. All from
         our stone oven, all organic, all delicious.
       </p>
+
       <ul className="pizzas">
         {pizzaData.map((pizza) => (
           <Pizza pizzaObject={pizza} key={pizza.name} />
@@ -89,8 +91,7 @@ function Pizza({ pizzaObject }) {
 function Order() {
   return (
     <div className="order">
-      <p>We're open until {22}:00. Come visit us or order online.</p>
-
+      <p>We're open until 22:00. Come visit us or order online.</p>
       <button className="btn">Order</button>
     </div>
   );
@@ -98,14 +99,17 @@ function Order() {
 
 function App() {
   const hour = new Date().getHours();
+
   const openHour = 12;
   const closeHour = 22;
 
+  // Determine whether the restaurant is currently open.
   const isOpen = hour >= openHour && hour <= closeHour;
 
   return (
     <div className="container">
       <Header />
+
       <Menu />
 
       {isOpen ? (

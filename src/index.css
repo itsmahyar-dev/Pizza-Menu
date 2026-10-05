@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600&display=swap");
 
-/* =========================
+/* ==============================
    Base & Reset
-========================= */
+============================== */
 
 * {
   margin: 0;
@@ -28,7 +28,7 @@ body {
   border-bottom: 1.6rem solid #edc84b;
 }
 
-/* Text selection */
+/* Customize text selection. */
 
 ::selection {
   color: #252525;
@@ -39,9 +39,9 @@ button {
   font: inherit;
 }
 
-/* =========================
+/* ==============================
    Main Layout
-========================= */
+============================== */
 
 .container {
   width: 100%;
@@ -54,9 +54,9 @@ button {
   gap: 5.6rem;
 }
 
-/* =========================
+/* ==============================
    Header
-========================= */
+============================== */
 
 .header {
   width: 100%;
@@ -81,7 +81,7 @@ button {
   text-transform: uppercase;
 }
 
-/* Decorative lines beside the title */
+/* Decorative lines around the main heading. */
 
 .header h1::before,
 .header h1::after {
@@ -101,16 +101,16 @@ button {
   margin-left: 2.4rem;
 }
 
-/* Selection color for the header */
+/* Improve heading selection contrast. */
 
 .header h1::selection {
   color: #f7f2e9;
   background-color: #252525;
 }
 
-/* =========================
+/* ==============================
    Menu Header
-========================= */
+============================== */
 
 .menu {
   width: 100%;
@@ -145,9 +145,9 @@ button {
   text-align: center;
 }
 
-/* =========================
+/* ==============================
    Pizza Grid
-========================= */
+============================== */
 
 .pizzas {
   width: 100%;
@@ -159,9 +159,9 @@ button {
   list-style: none;
 }
 
-/* =========================
+/* ==============================
    Pizza Card
-========================= */
+============================== */
 
 .pizza {
   min-height: 17rem;
@@ -183,6 +183,8 @@ button {
     border-color 0.25s ease;
 }
 
+/* Add subtle elevation when hovering over an available pizza. */
+
 .pizza:hover {
   transform: translateY(-5px);
 
@@ -191,7 +193,9 @@ button {
   box-shadow: 0 1.6rem 3.5rem rgba(37, 37, 37, 0.1);
 }
 
-/* Pizza image */
+/* ==============================
+   Pizza Image
+============================== */
 
 .pizza img {
   flex-shrink: 0;
@@ -215,7 +219,9 @@ button {
   transform: scale(1.06) rotate(2deg);
 }
 
-/* Pizza content */
+/* ==============================
+   Pizza Content
+============================== */
 
 .pizza div {
   min-width: 0;
@@ -260,9 +266,9 @@ button {
   font-weight: 600;
 }
 
-/* =========================
-   Sold Out
-========================= */
+/* ==============================
+   Sold Out State
+============================== */
 
 .pizza.sold-out {
   opacity: 0.55;
@@ -270,6 +276,7 @@ button {
 
 .pizza.sold-out:hover {
   transform: none;
+
   box-shadow: 0 1rem 3rem rgba(37, 37, 37, 0.06);
   border-color: rgba(37, 37, 37, 0.06);
 }
@@ -282,9 +289,9 @@ button {
   background-color: #d5d5d5;
 }
 
-/* =========================
-   Footer & Order
-========================= */
+/* ==============================
+   Order Section
+============================== */
 
 .footer {
   width: 100%;
@@ -320,6 +327,10 @@ button {
   line-height: 1.6;
 }
 
+/* ==============================
+   Button
+============================== */
+
 .btn {
   padding: 1.3rem 3.6rem;
 
@@ -354,9 +365,9 @@ button {
   transform: translateY(0);
 }
 
-/* =========================
-   Responsive
-========================= */
+/* ==============================
+   Responsive Design
+============================== */
 
 @media (max-width: 800px) {
   body {
